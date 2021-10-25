@@ -1,21 +1,24 @@
 const doomCont = document.getElementById("containerDoom");
 
-for (let i = 1; i <= 100; i++){
+for (let i = 1; i <= 100; i++, msg="") {
     
-    doomCont.innerHTML += `<div class="doom">
-    ${i}
-</div>`;
-console.log(doomCont);
+    let square = document.createElement("div");
+    square.classList.add("square");
+    square.append(i);
+    doomCont.append(square);
+    
+    console.log(doomCont);
 
-  
+    if ((i % 3 == 0) && (i % 5 == 0)) {
+        console.log("FizzBuzz");
+        square.classList.add('fizzbuzz');
+    } else if(i % 3 == 0){
+        console.log("Fizz");
+        square.classList.add('fizz');
+    } else if(i % 5 == 0){
+        console.log("Buzz");
+        square.classList.add('buzz');
+    } else {
+        console.log(i);
+    };
 }
-if ((i % 3 == 0) && (i % 5 == 0)){
-    System.out.println("FizzBuzz");
-} else if(i % 3 == 0){
-    System.out.println("Fizz");
-} else if(i % 5 == 0){
-    System.out.println("Buzz");
-} else {
-    System.out.println(i);
-};
-console.log();
