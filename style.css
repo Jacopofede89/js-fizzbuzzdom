@@ -1,0 +1,25 @@
+#container{
+    background-color: rgba(8,59,76,255);
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+}
+
+#containerDoom{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.doom{
+    height: 50px;
+    width:calc(90% / 7 );
+    background-color:rgba(19,137,178,255);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
